@@ -1,0 +1,121 @@
+.container {
+  align-items: center;
+  position: relative;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  height: 25px;
+
+  div.expand {
+    &::before {
+      display: inline-block;
+      position: relative;
+      content: "";
+      height: 25%;
+      border-left: 1px dashed black;
+      line-height: 0;
+      text-align: center;
+    }
+
+    .expand-button {
+      position: relative;
+      height: 100%;
+
+      &::before {
+        content: "";
+        position: relative;
+        display: inline-block;
+        border-left: 1px dashed green;
+        height: 11px;
+        left: -1px;
+        top: 8px;
+      }
+    }
+  }
+
+  span.space {
+    position: relative;
+    width: 25px;
+    height: 100%;
+    display: inline-block;
+    border-left: 1px dashed red;
+
+    &::before {
+      left: -1px;
+      display: inline-block;
+      position: relative;
+      content: "";
+      width: 100%;
+      border-bottom: 1px dashed black;
+      line-height: 0;
+      text-align: center;
+    }
+
+    &.leaf {
+      // border-left: none;
+    }
+  }
+}
+
+/* span.leaf:last-of-type { */
+/* position: relative;
+  width: 25px;
+  height: 58%;
+  top: -20%;
+  text-align: center;
+  display: inline-block;
+  border-left: 1px dashed red; */
+/* } */
+
+/* span.expand:last-of-type { */
+/* border-right: 1px dashed orchid;
+      position: relative;
+      display: inline-block; */
+
+/* height: 50%; */
+
+/* position: relative;
+    width: 25px;
+    height: 58%;
+    top: -20%;
+    text-align: center;
+    display: inline-block;
+    border-left: 1px dashed red; */
+/* } */
+
+/* span.leaf {
+  position: relative;
+  display: inline-flex;
+  border-bottom: thin dashed green;
+  border-left: thin dashed red;
+
+  width: 25px;
+  height: 70%;
+  top: -25%;
+}
+
+span.leaf::before {
+  display: none;
+  visibility: none;
+} */
+
+/* .div ~ * {
+  background: red;
+} */
+
+/* * .s1 {
+  border-left-color: #e8e8e8;
+}
+
+.s2 {
+  border-left-color: black;
+}
+
+.s3 {
+  border-left-color: orange;
+}
+
+.s4 {
+  border-left-color: green;
+} */
