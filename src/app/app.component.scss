@@ -18,7 +18,7 @@
       text-align: center;
     }
 
-    .expand-button {
+    .expand-button.expanded {
       position: relative;
       height: 100%;
 
@@ -42,19 +42,35 @@
     border-left: 1px dashed red;
 
     &::before {
-      left: -1px;
+      // left: -1px;
       display: inline-block;
       position: relative;
       content: "";
       width: 100%;
-      border-bottom: 1px dashed black;
+      border-bottom: 1px dashed darkblue;
       line-height: 0;
       text-align: center;
     }
 
-    &.leaf {
-      // border-left: none;
+    &.last {
+      border-left: none;
+
+      &::before {
+        left: 0;
+        content: "";
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        border-left: 1px dashed orchid;
+        width: 100%;
+        line-height: 0;
+        height: 50%;
+      }
     }
+
+    // &.leaf {
+    //   // border-left: none;
+    // }
   }
 }
 
