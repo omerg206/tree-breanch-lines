@@ -41,7 +41,16 @@
     display: inline-block;
     border-left: 1px dashed red;
 
-    &::before {
+    &:last-of-type {
+      // background-color: orange;
+    }
+
+    // &.leaf {
+    //   border-left: none;
+    //   // border: olive;
+    // }
+
+    &:last-of-type::before {
       // left: -1px;
       display: inline-block;
       position: relative;
@@ -52,21 +61,21 @@
       text-align: center;
     }
 
-    &.last {
-      border-left: none;
+    // &.last {
+    //   border-left: none;
 
-      &::before {
-        left: 0;
-        content: "";
-        position: relative;
-        display: inline-block;
-        text-align: center;
-        border-left: 1px dashed orchid;
-        width: 100%;
-        line-height: 0;
-        height: 50%;
-      }
-    }
+    //   &::before {
+    //     left: 0;
+    //     content: "";
+    //     position: relative;
+    //     display: inline-block;
+    //     text-align: center;
+    //     border-left: 1px dashed orchid;
+    //     width: 100%;
+    //     line-height: 0;
+    //     height: 55%;
+    //   }
+    // }
 
     // &.leaf {
     //   // border-left: none;
